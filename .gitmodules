@@ -4,3 +4,6 @@
 [submodule "awesome-vim-colorschemes"]
 	path = modules/awesome-vim-colorschemes
 	url = https://github.com/rafi/awesome-vim-colorschemes
+[submodule "modules/source-code-pro"]
+	path = modules/source-code-pro
+	url = https://github.com/adobe-fonts/source-code-pro.git

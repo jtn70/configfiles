@@ -1,5 +1,12 @@
 # CONFIGURATION FILES FOR EDITORS / OS
 
+## FONTS
+https://github.com/i-tu/Hasklig/releases/download/1.1/Hasklig-1.1.zip
+https://github.com/adobe-fonts/source-code-pro.git
+https://github.com/tonsky/FiraCode.git
+
+
+
 ## EDITORS
 ### VIM
 **WINDOWS**
