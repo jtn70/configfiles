@@ -1,0 +1,6 @@
+[submodule "FiraCode"]
+	path = modules/FiraCode
+	url = https://github.com/tonsky/FiraCode.git
+[submodule "awesome-vim-colorschemes"]
+	path = modules/awesome-vim-colorschemes
+	url = https://github.com/rafi/awesome-vim-colorschemes

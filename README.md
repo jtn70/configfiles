@@ -27,3 +27,8 @@ git clone https://github.com/rafi/awesome-vim-colorschemes
 ```powershell
 Copy-Item '.\awesome-vim-colorschemes\colors\*.vim' -Destination 'C:\Program Files\vim\vim82\colors\'
 ```
+###VISUAL STUDIO CODE
+**WINDOWS**
+```powershell
+copy-item .\vscsettings.json $env:USERPROFILE\AppData\Roaming\Code\user\settings.json
+```
