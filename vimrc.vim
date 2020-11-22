@@ -23,8 +23,11 @@ command! W execute 'w !sudo tee & > /dev/null' <bar> edit!	" :W sudo saves the f
 
 
 " VIM USER INTERFACE
-set so=7 	" 7 lines to the cursor when moving vertically with j/k
+set so=7 	    " 7 lines to the cursor when moving vertically with j/k
 set wildmenu	" command line completion (use TAB)
+set cursorline  " highlight current cursorline
+set lazyredraw  " redraw only when needed
+
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
@@ -50,7 +53,7 @@ set belloff=all			" Turn off all sound
 " COLORS/FONTS
 syntax enable			" Enable Syntax Highlighting
 set termguicolors		" Upgrade number of colors shown
-colorscheme elflord		
+colorscheme molokai	
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"	" Hack to display correctly in some terminals
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set encoding=utf8			" Set UTF-8 as standard file encoding
@@ -59,3 +62,18 @@ set encoding=utf8			" Set UTF-8 as standard file encoding
 set nobackup			" Turn of backup
 set nowb
 set noswapfile
+
+
+" TEXT,TAB,INDENTS
+set shiftwidth=4    " 1 TAB = 4 SPACE
+set tabstop=4
+set softtabstop=4
+set expandtab       " Use spaces instead of tabs
+set smarttab
+set lbr             " Set linbreak on 500 char
+set tw=500          
+set ai              " Autoindent
+set si              " Smartindent
+set wrap            " Wrap lines
+
+

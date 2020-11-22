@@ -1,9 +1,18 @@
 # CONFIGURATION FILES FOR EDITORS / OS
 
-## Colorthemes
-For vim, use this for example : https://github.com/rafi/awesome-vim-colorschemes.
-My vim file uses this repository from vim themes, if you don't want to install this,
-edit the vim colorscheme to
+## EDITORS
+### VIM
+**WINDOWS**
+```powershell
+copy-item .\vimrc.vim -Destination $env:USERPROFILE\.vimrc
+```
+
+
+## Colorschemes
+
+### VIM
+For vim, use this for example : https://github.com/rafi/awesome-vim-colorschemes.<br/>
+My vim file uses this repository from vim themes, if you don't want to install this, edit the vim colorscheme to
 ```vim
 colorscheme default
 ```
