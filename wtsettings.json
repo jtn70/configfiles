@@ -16,12 +16,12 @@
       "fontFace": "Cascadia Code PL",
       "fontSize": 14,
       "useAcrylic": true,
-      "acrylicOpacity": 0.7,
+      "acrylicOpacity": 0.5,
       "colorScheme": "PowerShellTom",
-      "backgroundImage": "%USERPROFILE%/source/repos/tooling/resources/Powershell_256.png",
+      "backgroundImage": "%USERPROFILE%/source/repos/tooling/resources/Powershell_Core_6.0_icon.png",
       "backgroundImageStretchMode": "none",
       "backgroundImageAlignment": "bottomRight",
-      "backgroundImageOpacity": 0.3
+      "backgroundImageOpacity": 0.1
     },
     {
       "guid": "{bfaa307e-f2ac-4679-a168-734e18e820ad}",
@@ -39,9 +39,13 @@
       "fontFace": "Cascadia Code PL",
       "fontSize": 14,
       "useAcrylic": true,
-      "acrylicOpacity": 0.7,
+      "acrylicOpacity": 0.5,
       "colorScheme": "Frost",
-      "cursorColor": "#000000"
+      "cursorColor": "#000000",
+      "backgroundImage": "%USERPROFILE%/source/repos/tooling/resources/microsoft-azure-logo.png",
+      "backgroundImageStretchMode": "none",
+      "backgroundImageAlignment": "bottomRight",
+      "backgroundImageOpacity": 0.1
     },
     {
       "name": "Command Prompt",
@@ -64,7 +68,13 @@
       "source": "Windows.Terminal.Wsl",
       "fontFace": "Consolas",
       "fontSize": 14,
-      "colorScheme": "UbuntuLegit"
+      "colorScheme": "UbuntuLegit",
+      "useAcrylic": true,
+      "acrylicOpacity": 0.5,
+      "backgroundImage": "%USERPROFILE%/source/repos/tooling/resources/ubuntu-logo32.png",
+      "backgroundImageStretchMode": "none",
+      "backgroundImageAlignment": "bottomRight",
+      "backgroundImageOpacity": 0.1
     },
     {
       "name": "Python",
@@ -80,12 +90,12 @@
       "fontSize": 14,
       "guid": "{1850e97f-16dc-4281-9ea9-0100c4e852c5}",
       "historySize": 9001,
-      "icon": "",
+      "icon": "%USERPROFILE%/source/repos/tooling/resources/py.ico",
       "padding": "0,0,0,0",
       "snapOnInput": true,
       "startingDirectory": "%USERPROFILE",
       "useAcrylic": true,
-      "backgroundImage": "%USERPROFILE%\\source\\repos\\tooling\\resources\\python-logo.png",
+      "backgroundImage": "%USERPROFILE%/source/repos/tooling/resources/python-logo.png",
       "backgroundImageStretchMode": "none",
       "backgroundImageAlignment": "bottomRight",
       "backgroundImageOpacity": 0.5
