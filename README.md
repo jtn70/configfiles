@@ -7,15 +7,8 @@ https://github.com/tonsky/FiraCode.git
 https://github.com/i-tu/Hasklig/releases/download/1.1/Hasklig-1.1.zip
 
 ## EDITORS
-### VIM
-**WINDOWS**
-
-```powershell
-copy-item .\vimrc.vim -Destination $env:USERPROFILE\.vimrc
-```
 
 
-## Colorschemes
 
 ### VIM
 
@@ -32,21 +25,7 @@ git clone https://github.com/rafi/awesome-vim-colorschemes
 
 **Windows instructions** (in PowerShell and you must open terminal as administrator)
 
-```powershell
-Copy-Item '.\awesome-vim-colorschemes\colors\*.vim' -Destination 'C:\Program Files\vim\vim82\colors\'
-```
-
-###VISUAL STUDIO CODE
-
-**WINDOWS**
-
-```powershell
-copy-item .\vscsettings.json $env:USERPROFILE\AppData\Roaming\Code\user\settings.json
-```
-
-resolve-path "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_*\LocalState" | copy-item -path .\wtsettings.json -Destination {$_}
 New-Item -ItemType file example.txt
 https://docs.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/retro-command-prompt
 https://int10h.org/oldschool-pc-fonts/download/
 https://www.schemecolor.com/python-logo-colors.php
-https://docs.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/retro-command-prompt

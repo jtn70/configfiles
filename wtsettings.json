@@ -1,191 +1,190 @@
-
 // Jens Torgeir Solaugsten, 2020
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 // https://docs.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/
 {
-    "$schema": "https://aka.ms/terminal-profiles-schema",
-
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-
-    "profiles":
-    [
-      {
-        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-        "hidden": false,
-        "name": "PowerShell 7",
-        "source": "Windows.Terminal.PowershellCore",
-        "fontFace": "Cascadia Code PL",
-        "fontSize": 14,
-        "useAcrylic": true,
-        "acrylicOpacity": 0.7,
-        "colorScheme": "PowerShellTom",
-        "backgroundImage": "c:\\users\\jtn70\\source\\repos\\tooling\\resources\\Powershell_256.png",
-        "backgroundImageStretchMode": "none",
-        "backgroundImageAlignment": "bottomRight",
-        "backgroundImageOpacity": 0.3
-
-      },
-      {
-
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": false,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure",
-        "fontFace": "Cascadia Code PL",
-        "fontSize": 14
-      },
-      {
-        "name": "Command Prompt",
-        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "commandline": "cmd.exe",
-        "hidden": false,
-        "closeOnExit": true,
-        "colorScheme": "Retro",
-        "cursorShape": "filledBox",
-        "fontFace": "PxPlus IBM VGA8",
-        "fontSize": 16,
-        "padding": "5, 5, 5, 5",
-        "tabTitle": "Command Prompt",
-        "experimental.retroTerminalEffect": true
-      },
-      {
-        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-        "hidden": false,
-        "name": "Ubuntu",
-        "source": "Windows.Terminal.Wsl",
-        "fontFace": "Consolas",
-        "fontSize":  14,
-        "colorScheme": "UbuntuLegit"
-
-      },
-      {
-        "name": "Python",
-        "tabTitle": "Python",
-        "acrylicOpacity": 0.75,
-        "closeOnExit": true,
-        "colorscheme": "Campell",
-        "commandline": "py.exe",
-        "cursorColor": "#FFFFFF",
-        "background": "#4b8bbe",
-        "cursorShape": "bar",
-        "fontFace": "Cascadia Code PL",
-        "fontSize": 14,
-        "guid": "{1850e97f-16dc-4281-9ea9-0100c4e852c5}",
-        "historySize": 9001,
-        "icon": "",
-        "padding": "0,0,0,0",
-        "snapOnInput": true,
-        "startingDirectory": "%USERPROFILE",
-        "useAcrylic": true,
-        "backgroundImage": "c:\\users\\jtn70\\source\\repos\\tooling\\resources\\python-logo.png",
-        "backgroundImageStretchMode": "none",
-        "backgroundImageAlignment": "bottomRight",
-        "backgroundImageOpacity": 0.5
-
-      },
-      {
-          "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-          "hidden": false,
-          "name": "Debian",
-          "source": "Windows.Terminal.Wsl"
-      }
-    ],
-
-    // Add custom color schemes to this array
-    "schemes":
-    [
-      {
-        // Color Scheme: Retro
-        "name": "Retro",
-        "background": "#000000",
-        "black": "#b0b0b0",
-        "blue": "#b0b0b0",
-        "brightBlack": "#b0b0b0",
-        "brightBlue": "#b0b0b0",
-        "brightCyan": "#b0b0b0",
-        "brightGreen": "#b0b0b0",
-        "brightPurple": "#b0b0b0",
-        "brightRed": "#b0b0b0",
-        "brightWhite": "#b0b0b0",
-        "brightYellow": "#0b0b0b",
-        "cyan": "#b0b0b0",
-        "foreground": "#b0b0b0",
-        "green": "#b0b0b0",
-        "purple": "#b0b0b0",
-        "red": "#b0b0b0",
-        "white": "#b0b0b0",
-        "yellow": "#b0b0b0"
-      },
-      {
-        // Color Scheme: UbuntuLegit
-        "background":  "#2C001E",
-        "black":  "#4E9A06",
-        "blue":  "#3465A4",
-        "brightBlack":  "#555753",
-        "brightBlue":  "#729FCF",
-        "brightCyan":  "#34E2E2",
-        "brightGreen":  "#8AE234",
-        "brightPurple":  "#AD7FA8",
-        "brightRed":  "#EF2929",
-        "brightWhite":  "#EEEEEE",
-        "brightYellow":  "#FCE94F",
-        "cyan":  "#06989A",
-        "foreground":  "#EEEEEE",
-        "green":  "#300A24",
-        "name":  "UbuntuLegit",
-        "purple":  "#75507B",
-        "red":  "#CC0000",
-        "white":  "#D3D7CF",
-        "yellow":  "#C4A000"
-      },
-      {
-        // Color Scheme: Dracula
-        "background" : "#282A36",
-        "black" : "#21222C",
-        "blue" : "#BD93F9",
-        "brightBlack" : "#6272A4",
-        "brightBlue" : "#D6ACFF",
-        "brightCyan" : "#A4FFFF",
-        "brightGreen" : "#69FF94",
-        "brightPurple" : "#FF92DF",
-        "brightRed" : "#FF6E6E",
-        "brightWhite" : "#FFFFFF",
-        "brightYellow" : "#FFFFA5",
-        "cyan" : "#8BE9FD",
-        "foreground" : "#F8F8F2",
-        "green" : "#50FA7B",
-        "name" : "Dracula",
-        "purple" : "#FF79C6",
-        "red" : "#FF5555",
-        "white" : "#F8F8F2",
-        "yellow" : "#F1FA8C"
-      },
-      {
-        // Color Scheme: PowerShellTom
-        "background" : "#012456",
-        "black" : "#000000",
-        "blue" : "#0000ff",
-        "brightBlack" : "#AAAAAA",
-        "brightBlue" : "#44B4CC",
-        "brightCyan" : "#19D1D8",
-        "brightGreen" : "#81EC0D",
-        "brightPurple" : "#FF00FF",
-        "brightRed" : "#FF0000",
-        "brightWhite" : "#E5E5E5",
-        "brightYellow" : "#FFD93D",
-        "cyan" : "#19D1D8",
-        "foreground" : "#FFFFFF",
-        "green" : "#00ff00",
-        "name" : "PowerShellTom",
-        "purple" : "#9933CC",
-        "red" : "#FF6600",
-        "white" : "#F5F5F5",
-        "yellow" : "#FFD93D"
-      }
-    ],
-
-    // Add any keybinding overrides to this array.
-    // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": []
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "initialCols": 100,
+  "initalRows": 30,
+  "profiles": [
+    {
+      "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+      "hidden": false,
+      "name": "PowerShell 7",
+      "source": "Windows.Terminal.PowershellCore",
+      "fontFace": "Cascadia Code PL",
+      "fontSize": 14,
+      "useAcrylic": true,
+      "acrylicOpacity": 0.7,
+      "colorScheme": "PowerShellTom",
+      "backgroundImage": "c:\\users\\jtn70\\source\\repos\\tooling\\resources\\Powershell_256.png",
+      "backgroundImageStretchMode": "none",
+      "backgroundImageAlignment": "bottomRight",
+      "backgroundImageOpacity": 0.3
+    },
+    {
+      "guid": "{bfaa307e-f2ac-4679-a168-734e18e820ad}",
+      "hidden": false,
+      "name": "smallps7",
+      "commandLine": "pwsh.exe",
+      "fontFace": "Cascadia Code PL",
+      "fontSize": 10
+    },
+    {
+      "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+      "hidden": false,
+      "name": "Azure Cloud Shell",
+      "source": "Windows.Terminal.Azure",
+      "fontFace": "Cascadia Code PL",
+      "fontSize": 14
+    },
+    {
+      "name": "Command Prompt",
+      "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+      "commandline": "cmd.exe",
+      "hidden": false,
+      "closeOnExit": true,
+      "colorScheme": "Retro",
+      "cursorShape": "filledBox",
+      "fontFace": "PxPlus IBM VGA8",
+      "fontSize": 16,
+      "padding": "5, 5, 5, 5",
+      "tabTitle": "Command Prompt",
+      "experimental.retroTerminalEffect": true
+    },
+    {
+      "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+      "hidden": false,
+      "name": "Ubuntu",
+      "source": "Windows.Terminal.Wsl",
+      "fontFace": "Consolas",
+      "fontSize": 14,
+      "colorScheme": "UbuntuLegit"
+    },
+    {
+      "name": "Python",
+      "tabTitle": "Python",
+      "acrylicOpacity": 0.75,
+      "closeOnExit": true,
+      "colorscheme": "Campell",
+      "commandline": "py.exe",
+      "cursorColor": "#FFFFFF",
+      "background": "#4b8bbe",
+      "cursorShape": "bar",
+      "fontFace": "Cascadia Code PL",
+      "fontSize": 14,
+      "guid": "{1850e97f-16dc-4281-9ea9-0100c4e852c5}",
+      "historySize": 9001,
+      "icon": "",
+      "padding": "0,0,0,0",
+      "snapOnInput": true,
+      "startingDirectory": "%USERPROFILE",
+      "useAcrylic": true,
+      "backgroundImage": "c:\\users\\jtn70\\source\\repos\\tooling\\resources\\python-logo.png",
+      "backgroundImageStretchMode": "none",
+      "backgroundImageAlignment": "bottomRight",
+      "backgroundImageOpacity": 0.5
+    },
+    {
+      "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+      "hidden": false,
+      "name": "Debian",
+      "source": "Windows.Terminal.Wsl"
+    }
+  ],
+  // Add custom color schemes to this array
+  "schemes": [
+    {
+      // Color Scheme: Retro
+      "name": "Retro",
+      "background": "#000000",
+      "black": "#b0b0b0",
+      "blue": "#b0b0b0",
+      "brightBlack": "#b0b0b0",
+      "brightBlue": "#b0b0b0",
+      "brightCyan": "#b0b0b0",
+      "brightGreen": "#b0b0b0",
+      "brightPurple": "#b0b0b0",
+      "brightRed": "#b0b0b0",
+      "brightWhite": "#b0b0b0",
+      "brightYellow": "#0b0b0b",
+      "cyan": "#b0b0b0",
+      "foreground": "#b0b0b0",
+      "green": "#b0b0b0",
+      "purple": "#b0b0b0",
+      "red": "#b0b0b0",
+      "white": "#b0b0b0",
+      "yellow": "#b0b0b0"
+    },
+    {
+      // Color Scheme: UbuntuLegit
+      "background": "#2C001E",
+      "black": "#4E9A06",
+      "blue": "#3465A4",
+      "brightBlack": "#555753",
+      "brightBlue": "#729FCF",
+      "brightCyan": "#34E2E2",
+      "brightGreen": "#8AE234",
+      "brightPurple": "#AD7FA8",
+      "brightRed": "#EF2929",
+      "brightWhite": "#EEEEEE",
+      "brightYellow": "#FCE94F",
+      "cyan": "#06989A",
+      "foreground": "#EEEEEE",
+      "green": "#300A24",
+      "name": "UbuntuLegit",
+      "purple": "#75507B",
+      "red": "#CC0000",
+      "white": "#D3D7CF",
+      "yellow": "#C4A000"
+    },
+    {
+      // Color Scheme: Dracula
+      "background": "#282A36",
+      "black": "#21222C",
+      "blue": "#BD93F9",
+      "brightBlack": "#6272A4",
+      "brightBlue": "#D6ACFF",
+      "brightCyan": "#A4FFFF",
+      "brightGreen": "#69FF94",
+      "brightPurple": "#FF92DF",
+      "brightRed": "#FF6E6E",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFFA5",
+      "cyan": "#8BE9FD",
+      "foreground": "#F8F8F2",
+      "green": "#50FA7B",
+      "name": "Dracula",
+      "purple": "#FF79C6",
+      "red": "#FF5555",
+      "white": "#F8F8F2",
+      "yellow": "#F1FA8C"
+    },
+    {
+      // Color Scheme: PowerShellTom
+      "background": "#012456",
+      "black": "#000000",
+      "blue": "#0000ff",
+      "brightBlack": "#AAAAAA",
+      "brightBlue": "#44B4CC",
+      "brightCyan": "#19D1D8",
+      "brightGreen": "#81EC0D",
+      "brightPurple": "#FF00FF",
+      "brightRed": "#FF0000",
+      "brightWhite": "#E5E5E5",
+      "brightYellow": "#FFD93D",
+      "cyan": "#19D1D8",
+      "foreground": "#FFFFFF",
+      "green": "#00ff00",
+      "name": "PowerShellTom",
+      "purple": "#9933CC",
+      "red": "#FF6600",
+      "white": "#F5F5F5",
+      "yellow": "#FFD93D"
+    }
+  ],
+  // Add any keybinding overrides to this array.
+  // To unbind a default keybinding, set the command to "unbound"
+  "keybindings": []
 }
