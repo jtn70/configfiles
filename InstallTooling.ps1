@@ -1,5 +1,62 @@
 #Requires -RunAsAdministrator
 
+
+# Check if minimum version 7 is running
+if ($Host.Version.Major -lt 8) {
+    Write-Host -ForegroundColor Yellow "You should *REALLY install a new Powershell version"
+    while ($true) {
+        $instpowershell = Read-Host -Prompt 'Install newest powershell version [yes]/no'
+        if ([string]::IsNullOrWhiteSpace($instpowershell)) {
+            $instpowershell = 'yes'
+        }
+        if ($instpowershell.ToLower() -eq 'yes') {
+            $links = (Invoke-WebRequest -Uri "https://github.com/PowerShell/PowerShell/releases/latest").Links.Href
+            $psdownload = ""
+            foreach ($link in $links) {
+                if ($link -match '.*PowerShell.*win-x64.msi') {
+                    $psdownload = "https://github.com$link"
+                    $outfile = [System.IO.Path]::GetFileName($link)
+                    Write-Host "Downloading Newest Powershell, please wait..."
+                    Invoke-WebRequest -Uri $psdownload -OutFile $outfile
+
+                    exit
+                }
+            }
+        }
+        else {
+            Write-Host "... if you do not want to install a new PowerShell,"
+            Write-Host "... then I do not want to install anything."
+            exit
+        }
+    }
+}
+
+# Powershell Profile
+if (Test-Path $profile) {
+    while ($true) {
+        $instpwshprofile = Read-Host -Prompt 'Powershell User profile exists. Overwrite  [yes]/no '
+        if ([string]::IsNullOrWhiteSpace($instpwshprofile)) {
+            $instpwshprofile = 'yes'
+        }
+        if ($instpwshprofile.ToLower() -eq 'yes') {
+            Write-Host -ForegroundColor Yellow "Installing Powershell Profile"
+            Copy-Item ./Microsoft.PowerShell_profile.ps1 $profile
+            break;
+        }
+        elseif ($instpwshprofile.ToLower() -eq 'no') {
+            break;
+        }
+    }
+}
+else {
+    Write-Host -ForegroundColor Yellow "Installing Powershell Profile"
+    Copy-Item ./Microsoft.PowerShell_profile.ps1 $profile
+}
+
+
+
+
+
 # Install visual studio extensions
 $vcmodules = @('ms-python.python',
     'ms-dotnettools.csharp',
