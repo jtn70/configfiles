@@ -1,5 +1,11 @@
 #Requires -RunAsAdministrator
 
+# Check if this is a pc, currently only works on a pc
+if ($IsMacOS -or $IsLinux) {
+    Write-Host "This project currently only works on Windows."
+    Write-Host "Be patient, ... maybe a Linux or MacOS version is comming your way ;-)"
+    exit
+}
 
 # Check if minimum version 7 is running
 if ($Host.Version.Major -lt 8) {
@@ -16,9 +22,14 @@ if ($Host.Version.Major -lt 8) {
                 if ($link -match '.*PowerShell.*win-x64.msi') {
                     $psdownload = "https://github.com$link"
                     $outfile = [System.IO.Path]::GetFileName($link)
+                    $outfile = $env:TEMP + '/' + $outfile
                     Write-Host "Downloading Newest Powershell, please wait..."
                     Invoke-WebRequest -Uri $psdownload -OutFile $outfile
-
+                    Write-Host "After much time, installation is in progress.."
+                    $arguments = "/i `"$outfile`" /quiet"
+                    Start-Process msiexec.exe -ArgumentList $arguments -Wait
+                    Write-Host "A new version ofPowershell is now installed."
+                    Write-Host "Switch to this and restart the script."
                     exit
                 }
             }

@@ -1,31 +1,33 @@
-# CONFIGURATION FILES FOR EDITORS / OS
+# tooling
 
-## FONTS
-https://github.com/i-tu/Hasklig/releases/download/1.1/Hasklig-1.1.zip
-https://github.com/adobe-fonts/source-code-pro.git
-https://github.com/tonsky/FiraCode.git
-https://github.com/i-tu/Hasklig/releases/download/1.1/Hasklig-1.1.zip
+Installation/Configuration Script for various development tools.
 
-## EDITORS
+> :warning: **Read below what this script installs and changes in your environment.** If
+> you disagree with what is done to your environment or the tools installed. DO NOT RUN IT!
+> The author is not responsible for any damage this script does in any way.
 
+## Tools installed
 
+**Powershell** https://docs.microsoft.com/en-us/powershell/<br/>
+**WinGet** https://docs.microsoft.com/en-us/windows/package-manager/<br/>
+**Visual Studio Code** https://code.visualstudio.com/<br>
+**Git** https://git-scm.com/<br/>
+**VIM** https://www.vim.org/<br/>
 
-### VIM
+## Fonts installed
 
-For vim, use this for example : https://github.com/rafi/awesome-vim-colorschemes.<br/>
-My vim file uses this repository from vim themes, if you don't want to install this, edit the vim colorscheme to
+**Source Code PRO** https://github.com/adobe-fonts/source-code-pro<br/>
+**Source Serif PRO** https://github.com/adobe-fonts/source-serif-pro<br/>
+**Source Sans PRO** https://github.com/adobe-fonts/source-sans-pro<br/>
+**Hasklig** https://github.com/i-tu/Hasklig<br/>
+**Fira Code** https://github.com/tonsky/FiraCode<br/>
+**PxPlus_IBM_VGA8**https://github.com/pocketfood/Fontpkg-PxPlus_IBM_VGA8<br/>
+**Cascadia Code**https://github.com/microsoft/cascadia-code<br/>
 
-```vim
-colorscheme default
-```
+## Environment Changes
 
-```bash
-git clone https://github.com/rafi/awesome-vim-colorschemes
-```
-
-**Windows instructions** (in PowerShell and you must open terminal as administrator)
-
-New-Item -ItemType file example.txt
-https://docs.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/retro-command-prompt
-https://int10h.org/oldschool-pc-fonts/download/
-https://www.schemecolor.com/python-logo-colors.php
+| Powershell | Startup configuration added |
+| Bash | Startup configuration changed |
+| Vim | Configuration changed, color schemes added |
+| Git | Vim color schemes added |
+| Visual Studio Code | Environment changed, various modules added |
