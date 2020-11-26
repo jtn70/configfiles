@@ -26,8 +26,10 @@ Installation/Configuration Script for various development tools.
 
 ## Environment Changes
 
-| Powershell | Startup configuration added |
-| Bash | Startup configuration changed |
-| Vim | Configuration changed, color schemes added |
-| Git | Vim color schemes added |
+| Tool               | What is done                               |
+| ------------------ | ------------------------------------------ |
+| Powershell         | Startup configuration added                |
+| Bash               | Startup configuration changed              |
+| Vim                | Configuration changed, color schemes added |
+| Git                | Vim color schemes added                    |
 | Visual Studio Code | Environment changed, various modules added |
